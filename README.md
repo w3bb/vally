@@ -24,4 +24,4 @@ Be a bro and tag your stuff. Something that's urgent should probably be tagged a
 Be clean!!! The dev branch isn't for being messy -- it's for being edgy. Just like yours truly. And do I look messy bitch?
 
 # License
-All your stuff belongs to me. This is subject to change, but that's how it is now. When you commit, it's mine. It belongs to the creator of this repository.
+All your stuff belongs to me. This is subject to change, but that's how it is now. When you commit, it's mine. It belongs to the operator of the "w3bb" account on GitHub.
