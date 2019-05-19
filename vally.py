@@ -4,8 +4,11 @@ import discord.utils
 import asyncio
 import json
 import datetime
+import configparser
 from pathlib import Path
 import sys
+#Import vally related modules
+import welcomer
 
 
 
@@ -17,12 +20,16 @@ except:
     print("Failed to read token! Make sure you put your token into 'discord.token' in the bot's directory!")
     sys.exit(2)
 
+#Read configuration file, save variables.
+rconf = configparser.ConfigParser()
+rconf.read('config.ini')
+#Set variables
+prefix = rconf.get('Main', 'prefix')
+embedcolour = rconf.get('Main', 'embedcolour')
+
 #Initialize the bot
-bot = commands.Bot(command_prefix = 'ssd! ')
+bot = commands.Bot(command_prefix = prefix)
 bot.remove_command('help')
-
-
-
 
 @bot.event
 async def on_ready():
@@ -40,11 +47,11 @@ async def on_message(message):
 
 @bot.event
 async def on_member_join(member):
-    embed=discord.Embed(title="💞 Welcome To SSD!", color=0xff69b4, timestamp = datetime.datetime.now())
+    embed=discord.Embed(title="💞 Welcome To SSD!", color=embedcolour, timestamp = datetime.datetime.now())
     embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/542344236901597211/570070857427320892/SERVER_ICON4.png")
-    embed.add_field(name="Please take a look at the rules:", value="You can do so in " + "#welcome-and-rules + ".", inline=True)
+    embed.add_field(name="Please take a look at the rules:", value="You can do so in " + "#welcome-and-rules" + ".", inline=True)
     embed.add_field(name="Tell us about yourself!", value="Be sure to " + "#introduce-yourself" + " so we can get to know you better!", inline=False)
-    embed.add_field(name="See how you can stand out:", value="Take a look at " + "#get-roles + ".", inline=True)
+    embed.add_field(name="See how you can stand out:", value="Take a look at " + "#get-roles" + ".", inline=True)
     embed.add_field(name="Finally, invite 5 friends to get the :star: Star role!", value="This also gets you into unique giveaways. Have fun x", inline=True)
     embed.set_footer(text="School Students Discord")
     await member.send(embed=embed)
