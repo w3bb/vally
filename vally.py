@@ -7,10 +7,7 @@ import datetime
 import configparser
 from pathlib import Path
 import sys
-#Import vally related modules
-import welcomer
-
-
+import valcros
 
 # Read filesystem for token, close and warn if file can't be found/read
 try:
@@ -29,6 +26,7 @@ embedcolour = rconf.get('Main', 'embedcolour')
 
 #Initialize the bot
 bot = commands.Bot(command_prefix = prefix)
+bot.load_extension('valcros')
 bot.remove_command('help')
 
 @bot.event
@@ -47,7 +45,7 @@ async def on_message(message):
 
 @bot.event
 async def on_member_join(member):
-    embed=discord.Embed(title="💞 Welcome To SSD!", color=embedcolour, timestamp = datetime.datetime.now())
+    embed=discord.Embed(title="💞 Welcome To SSD!", color=0xff69b4, timestamp = datetime.datetime.now())
     embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/542344236901597211/570070857427320892/SERVER_ICON4.png")
     embed.add_field(name="Please take a look at the rules:", value="You can do so in " + "#welcome-and-rules" + ".", inline=True)
     embed.add_field(name="Tell us about yourself!", value="Be sure to " + "#introduce-yourself" + " so we can get to know you better!", inline=False)
