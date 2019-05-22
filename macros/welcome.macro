@@ -1,0 +1,23 @@
+[Meta]
+permissedrole = Bot Developer
+title = 💞 Welcome To SSD!
+thumbnail = https://cdn.discordapp.com/attachments/542344236901597211/570070857427320892/SERVER_ICON4.png
+footer = School Students Discord
+[Field 1]
+name = Please take a look at the rules:
+value = You can do so in #welcome-and-rules.
+inline = False
+
+[Field 2]
+name = Tell us about yourself!
+value = Be sure to #introduce-yourself
+inline = False
+
+[Field 3]
+name = See how you can stand out:
+value = Take a look at #get-roles.
+inline = False
+[Field 4]
+name = Finally, invite 5 friends to get the :star: Star role!"
+value = This also gets you into unique giveaways. Have fun x.
+inline = False
