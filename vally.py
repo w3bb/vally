@@ -2,8 +2,6 @@ import discord
 from discord.ext import commands
 import discord.utils
 import asyncio
-import json
-import datetime
 import configparser
 from pathlib import Path
 import sys
