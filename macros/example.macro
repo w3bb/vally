@@ -1,0 +1,29 @@
+[Meta]
+permissedrole = Bot Developer
+title = Title
+thumbnail = https://images-ext-1.discordapp.net/external/zgfmr0VqiuH1wcBwZTft9-ljotqv4mcFzYhUhz1MZe4/%3Fsize%3D256/https/cdn.discordapp.com/avatars/487054043395522560/624b1a96b693cd46c800f72064f3ede0.png
+url = https://google.com
+footer = This is the footer
+author = This is where the author string goes
+authorlink = https://google.com
+authoricon = https://images-ext-2.discordapp.net/external/lijrxC1wp6-hO3cWOogDNS1Fk0BhRyHqFYzT82lC9J8/https/images-ext-1.discordapp.net/external/zgfmr0VqiuH1wcBwZTft9-ljotqv4mcFzYhUhz1MZe4/%253Fsize%253D256/https/cdn.discordapp.com/avatars/487054043395522560/624b1a96b693cd46c800f72064f3ede0.png
+
+[Field 1]
+name = F1
+value = V1
+inline = True
+
+[Field 2]
+name = F2
+value = V2
+inline = True
+
+[Field 3]
+name = F3
+value = V3
+inline = False
+
+[Field 4]
+name = F4
+value = V4
+inline = False
