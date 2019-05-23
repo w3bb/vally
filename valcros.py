@@ -45,7 +45,7 @@ class valcros(commands.Cog):
             embed.set_thumbnail(url=str(mread.get('Meta', 'thumbnail')))
         except:
             pass
-        for i in range(26):
+        for i in range(25):
             try:
                 CurrentWorkingField = mread.get('Field ' + str(i), 'name')
             except:
