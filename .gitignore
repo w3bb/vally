@@ -10,3 +10,5 @@ __pycache__/vally\.cpython-37\.pyc
 __pycache__/valcros\.cpython-37\.pyc
 
 __pycache__/volls\.cpython-37\.pyc
+
+*.token
