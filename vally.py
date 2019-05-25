@@ -8,6 +8,8 @@ import sys
 import valcros
 import velcomer
 import volls
+import license
+
 # Read filesystem for token, close and warn if file can't be found/read
 try:
     with open('discord.token', 'r') as tokeninput:
@@ -19,6 +21,7 @@ except:
 #Read configuration file, save variables.
 rconf = configparser.ConfigParser()
 rconf.read('config.ini')
+
 #Set variables
 prefix = rconf.get('Main', 'prefix')
 embedcolour = rconf.get('Main', 'embedcolour')
@@ -28,6 +31,7 @@ bot = commands.Bot(command_prefix = prefix)
 bot.load_extension('valcros')
 bot.load_extension('velcomer')
 bot.load_extension('volls')
+bot.load_extension('license')
 bot.remove_command('help')
 
 @bot.event
