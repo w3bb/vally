@@ -1,5 +1,5 @@
 # vally
-School Students Discord's bot. 
+School Students Discord's bot. Join the server here, we'll be happy to support you. https://discord.gg/n4YyBE9
 
 
 # Writing an issue
