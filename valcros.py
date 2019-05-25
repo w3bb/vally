@@ -23,6 +23,7 @@ class valcros(commands.Cog):
                 await ctx.send("You don't have sufficient permissions to use this macro!")
                 return
             await ctx.send(embed=await self.constructmacro(requested_macro))
+    
     async def constructmacro(self, constructee):
         mread = configparser.ConfigParser(interpolation=None)
         mread.read('macros/' + constructee + ".macro")
@@ -52,6 +53,7 @@ class valcros(commands.Cog):
                 pass
             else:
                 embed.add_field(name=mread.get('Field ' + str(i), 'name'), value=mread.get('Field ' + str(i), 'value'), inline=mread.get('Field ' + str(i), 'inline').startswith("T"))
+       
         return embed
         
 def setup(bot):

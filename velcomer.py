@@ -3,7 +3,7 @@ from discord.ext import commands
 from valcros import valcros
 import configparser
 class velcomer(commands.Cog):
-
+    
     def __init__(self, bot):
         self.bot = bot
 
