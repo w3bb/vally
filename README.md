@@ -9,3 +9,4 @@
 
 <h3 align="center"> License </h3>
 <p align="center">The project uses modified BSD 3 clause license. You can read it in the LICENSE file. By (and not limited to) using this software, downloading it, and modifying it you agree to it.</p>
+<p align="center"><small><a href="https://suckless.org/philosophy/">If you're new to software development, give this a read.</a></small></p>
