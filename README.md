@@ -1,9 +1,3 @@
-<style>
-p {
- text-align:center
-}
-</style>
-
 <a href="https://github.com/w3bb/vally"> <img src="http://webb.spiderden.net/images/projects/vally/vally.png"> </a>
 <h1 align="center">vally </h1>
 <p align="center">A bot designed for School Students Discord.</p>
