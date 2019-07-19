@@ -8,7 +8,6 @@ import sys
 import valcros
 import velcomer
 import volls
-import license
 
 # Read filesystem for token, close and warn if file can't be found/read
 try:
@@ -31,7 +30,6 @@ bot = commands.Bot(command_prefix = prefix)
 bot.load_extension('valcros')
 bot.load_extension('velcomer')
 bot.load_extension('volls')
-bot.load_extension('license')
 bot.remove_command('help')
 
 @bot.event
